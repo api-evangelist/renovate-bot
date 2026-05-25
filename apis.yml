@@ -1,0 +1,390 @@
+aid: renovate-bot
+url: https://raw.githubusercontent.com/api-evangelist/renovate-bot/refs/heads/main/apis.yml
+apis:
+- aid: renovate-bot:renovate-cli
+  name: Renovate CLI
+  tags:
+  - CLI
+  - DependencyUpdates
+  - Automation
+  - OpenSource
+  humanURL: https://docs.renovatebot.com/usage/
+  properties:
+  - url: https://docs.renovatebot.com/
+    type: Documentation
+  - url: https://github.com/renovatebot/renovate
+    type: SourceCode
+  - url: https://www.npmjs.com/package/renovate
+    type: Package
+  - url: https://hub.docker.com/r/renovate/renovate
+    type: Package
+  - url: https://ghcr.io/renovatebot/renovate
+    type: Package
+  description: The open source Renovate CLI is a Node.js application distributed via npm and as Docker
+    images on Docker Hub and GitHub Container Registry. It can be run locally, in CI, or as a long-lived
+    self-hosted bot to scan repositories, detect dependency files for 100+ package managers, and open pull
+    requests that update outdated versions, lockfiles, and digests. Self-hosted Renovate is configured
+    through environment variables, a JS/JSON config file, and per-repository config files.
+- aid: renovate-bot:renovate-configuration
+  name: Renovate Configuration
+  tags:
+  - Configuration
+  - Presets
+  - PackageRules
+  humanURL: https://docs.renovatebot.com/configuration-options/
+  properties:
+  - url: https://docs.renovatebot.com/configuration-options/
+    type: Documentation
+  - url: https://docs.renovatebot.com/config-presets/
+    type: Documentation
+  - url: https://docs.renovatebot.com/key-concepts/dependency-dashboard/
+    type: Documentation
+  - url: https://docs.renovatebot.com/configuration-templates/
+    type: Documentation
+  - url: https://docs.renovatebot.com/renovate-schema.json
+    type: JSONSchema
+  description: Renovate's behavior is driven by repository-level configuration files (`renovate.json`,
+    `renovate.json5`, `.github/renovate.json`, `.gitlab/renovate.json`, `.renovaterc`, or a deprecated
+    `renovate` key in `package.json`). Configuration supports presets (`extends`), `packageRules` for
+    conditional behavior, schedules, automerge policies, base branch patterns, the Dependency Dashboard,
+    grouping, and per-manager overrides. A canonical JSON Schema (`renovate-schema.json`) describes every
+    option.
+- aid: renovate-bot:renovate-managers
+  name: Renovate Package Managers
+  tags:
+  - PackageManagers
+  - Languages
+  - DependencyUpdates
+  humanURL: https://docs.renovatebot.com/modules/manager/
+  properties:
+  - url: https://docs.renovatebot.com/modules/manager/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/datasource/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/versioning/
+    type: Documentation
+  description: Renovate ships 100+ package manager modules covering JavaScript (npm, bun, deno, nvm, nodenv),
+    Python (poetry, pipenv, pip-compile, pep621, pyenv), Java/JVM (maven, gradle, sbt, ant), .NET (nuget,
+    cake), Go (gomod), Rust (cargo), Ruby (bundler), Docker (dockerfile, docker-compose, devcontainer),
+    Kubernetes (kubernetes, kustomize, helmfile, helmsman, flux, argocd), Terraform (terraform, terragrunt),
+    CI systems (github-actions, gitlabci, circleci, jenkins, azure-pipelines, bitbucket-pipelines, buildkite,
+    droneci, tekton, woodpecker), Bazel, Ansible, Homebrew, asdf, mise, nix, proto, and many more. Each
+    manager pairs with a datasource and a versioning scheme module so version comparison matches the
+    upstream ecosystem.
+- aid: renovate-bot:renovate-platforms
+  name: Renovate Git Platforms
+  tags:
+  - Platforms
+  - Integrations
+  - SCM
+  humanURL: https://docs.renovatebot.com/modules/platform/
+  properties:
+  - url: https://docs.renovatebot.com/modules/platform/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/platform/github/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/platform/gitlab/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/platform/bitbucket/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/platform/bitbucket-server/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/platform/azure/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/platform/gitea/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/platform/forgejo/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/platform/codecommit/
+    type: Documentation
+  - url: https://docs.renovatebot.com/modules/platform/gerrit/
+    type: Documentation
+  description: Renovate has pluggable platform adapters for GitHub (cloud and Enterprise Server), GitLab
+    (SaaS and CE/EE), Bitbucket Cloud, Bitbucket Data Center / Server, Azure DevOps, Gitea, Forgejo, AWS
+    CodeCommit (experimental), Gerrit (experimental), and SCM-Manager (experimental). Each platform module
+    handles authentication, PR/MR creation, comments, labels, status checks, and platform-specific quirks.
+- aid: renovate-bot:mend-hosted-renovate
+  name: Mend Hosted Renovate
+  tags:
+  - HostedService
+  - SaaS
+  - Mend
+  humanURL: https://docs.renovatebot.com/mend-hosted/overview/
+  properties:
+  - url: https://docs.renovatebot.com/mend-hosted/overview/
+    type: Documentation
+  - url: https://developer.mend.io/
+    type: Portal
+  - url: https://github.com/apps/renovate
+    type: Documentation
+  - url: https://www.mend.io/renovate/
+    type: Portal
+  description: Mend operates a hosted Renovate service that runs Renovate as a GitHub App, Bitbucket Cloud
+    app, and Azure DevOps integration on Mend infrastructure. A generous Community Cloud free tier covers
+    unlimited public and private repositories with 1 concurrent job, 4-hour scheduling, 1 vCPU / 3 GB
+    memory / 15 GB disk, and a 30-minute job timeout. The Community OSS Cloud uplift (for OSI-licensed
+    open source projects) doubles concurrency and memory and adds Merge Confidence Workflows. The
+    Enterprise Cloud tier provides 16 concurrent jobs, hourly scheduling, larger runners, Merge Confidence
+    Workflows, and Mend helpdesk support.
+- aid: renovate-bot:renovate-merge-confidence
+  name: Renovate Merge Confidence
+  tags:
+  - MergeConfidence
+  - DependencyHealth
+  - Mend
+  humanURL: https://docs.renovatebot.com/merge-confidence/
+  properties:
+  - url: https://docs.renovatebot.com/merge-confidence/
+    type: Documentation
+  - url: https://developer.mend.io/api/mc/
+    type: API
+  description: Merge Confidence is a Mend-operated data service that classifies each candidate update
+    (Low / Neutral / High / Very High) using package age, adoption, test pass rates, and known
+    vulnerabilities. Renovate consumes the Merge Confidence API to attach a confidence badge and reason
+    to each PR and can drive `packageRules` to restrict automerge to High / Very High updates. The
+    underlying API is publicly readable (no auth required for read) and lives under
+    `developer.mend.io/api/mc/`.
+name: Renovate
+tags:
+- DependencyUpdates
+- DeveloperTools
+- Bots
+- Automation
+- SoftwareSupplyChain
+- OpenSource
+- Mend
+- AGPLv3
+- Node.js
+- TypeScript
+kind: contract
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+common:
+- type: Portal
+  url: https://www.mend.io/renovate/
+- type: Documentation
+  url: https://docs.renovatebot.com/
+- type: GettingStarted
+  url: https://docs.renovatebot.com/getting-started/installing-onboarding/
+- type: SourceCode
+  url: https://github.com/renovatebot/renovate
+- type: GitHubOrganization
+  url: https://github.com/renovatebot
+- type: Documentation
+  url: https://github.com/apps/renovate
+  name: Renovate GitHub App
+- type: SignUp
+  url: https://developer.mend.io/
+  name: Mend Developer Portal
+- type: ChangeLog
+  url: https://github.com/renovatebot/renovate/releases
+- type: Issues
+  url: https://github.com/renovatebot/renovate/issues
+- type: Forum
+  url: https://github.com/renovatebot/renovate/discussions
+- type: ContactInfo
+  url: https://docs.renovatebot.com/getting-help/
+- type: Support
+  url: https://docs.renovatebot.com/getting-help/
+- type: License
+  url: https://github.com/renovatebot/renovate/blob/main/license
+  name: AGPL-3.0-only
+- type: Package
+  url: https://www.npmjs.com/package/renovate
+  name: npm renovate
+- type: Package
+  url: https://hub.docker.com/r/renovate/renovate
+  name: Docker Hub renovate/renovate
+- type: Package
+  url: https://github.com/renovatebot/renovate/pkgs/container/renovate
+  name: GHCR ghcr.io/renovatebot/renovate
+- type: Tool
+  url: https://github.com/renovatebot/github-action
+  name: Renovate GitHub Action
+- type: Tool
+  url: https://github.com/renovatebot/pre-commit-hooks
+  name: Renovate pre-commit hooks
+- type: SDK
+  url: https://github.com/renovatebot/renovate/tree/main/lib
+  name: Renovate Node.js library (lib/)
+- type: CodeExamples
+  url: https://github.com/renovatebot/.github
+  name: Renovate org docs
+- type: Documentation
+  url: https://docs.renovatebot.com/self-hosted-configuration/
+  name: Self-hosted configuration
+- type: Documentation
+  url: https://docs.renovatebot.com/self-hosted-experimental/
+  name: Self-hosted experimental options
+- type: Documentation
+  url: https://docs.renovatebot.com/configuration-options/
+  name: Configuration options
+- type: Documentation
+  url: https://docs.renovatebot.com/configuration-templates/
+  name: Configuration templates
+- type: Documentation
+  url: https://docs.renovatebot.com/config-presets/
+  name: Shareable config presets
+- type: Documentation
+  url: https://docs.renovatebot.com/key-concepts/dependency-dashboard/
+  name: Dependency Dashboard
+- type: Documentation
+  url: https://docs.renovatebot.com/key-concepts/automerge/
+  name: Automerge
+- type: Documentation
+  url: https://docs.renovatebot.com/modules/manager/
+  name: Package Manager Modules
+- type: Documentation
+  url: https://docs.renovatebot.com/modules/datasource/
+  name: Datasource Modules
+- type: Documentation
+  url: https://docs.renovatebot.com/modules/versioning/
+  name: Versioning Modules
+- type: Documentation
+  url: https://docs.renovatebot.com/modules/platform/
+  name: Platform Modules
+- type: Documentation
+  url: https://docs.renovatebot.com/modules/manager/regex/
+  name: Custom (regex) Manager
+- type: Documentation
+  url: https://docs.renovatebot.com/merge-confidence/
+  name: Merge Confidence
+- type: Documentation
+  url: https://docs.renovatebot.com/troubleshooting/
+  name: Troubleshooting
+- type: Documentation
+  url: https://docs.renovatebot.com/security-and-permissions/
+  name: Security and permissions
+- type: Documentation
+  url: https://docs.renovatebot.com/getting-started/private-packages/
+  name: Private packages
+- type: Documentation
+  url: https://docs.renovatebot.com/mend-hosted/overview/
+  name: Mend-hosted Renovate
+- type: PrivacyPolicy
+  url: https://www.mend.io/privacy-policy/
+- type: TermsOfService
+  url: https://www.mend.io/terms-of-service/
+- type: TrustCenter
+  url: https://www.mend.io/security-and-compliance/
+- type: Blog
+  url: https://www.mend.io/blog/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/mend-io/
+- type: Twitter
+  url: https://twitter.com/mend_io
+- type: Plans
+  url: https://docs.renovatebot.com/mend-hosted/overview/
+  data:
+  - id: community-cloud
+    name: Community Cloud
+    entries:
+    - geo: Global
+      unit: 1
+      label: Repositories
+      price: Free
+      metric: repository
+      timeFrame: usage
+      description: Unlimited public and private repositories.
+    elements:
+    - name: 1 concurrent job per organization
+    - name: 4-hour job scheduling
+    - name: 1 vCPU, 3 GB memory, 15 GB disk
+    - name: 30-minute job timeout
+    - name: Hosted as a GitHub App, Bitbucket Cloud app, or Azure DevOps integration
+    - name: No Merge Confidence Workflows
+    description: Free hosted Renovate for any GitHub, Bitbucket Cloud, or Azure DevOps org.
+  - id: community-oss-cloud
+    name: Community OSS Cloud
+    entries:
+    - geo: Global
+      unit: 1
+      label: Repositories
+      price: Free
+      metric: repository
+      timeFrame: usage
+      description: Free uplift for OSI-licensed open source projects on request.
+    elements:
+    - name: 2 concurrent jobs per organization
+    - name: 4-hour job scheduling
+    - name: 2 vCPU, 6 GB memory, 25 GB disk
+    - name: 60-minute job timeout
+    - name: Merge Confidence Workflows included
+    description: Enhanced free tier for open source projects with OSI-approved licenses.
+  - id: enterprise-cloud
+    name: Enterprise Cloud
+    entries:
+    - geo: Global
+      unit: 1
+      label: Pricing
+      price: Call
+      metric: org
+      timeFrame: month
+      description: Contact sales@mend.io for pricing.
+    elements:
+    - name: 16 concurrent jobs per organization
+    - name: Hourly job scheduling (every 4 hours on Bitbucket)
+    - name: 2 vCPU, 8 GB memory, 40 GB disk
+    - name: 60-minute job timeout
+    - name: Merge Confidence Workflows
+    - name: Mend.io helpdesk support
+    description: Commercial managed Renovate offering from Mend with higher concurrency and support.
+  name: Plans
+- type: Features
+  data:
+  - Open source dependency update bot written in TypeScript and distributed under AGPL-3.0-only
+  - 100+ package manager modules across JavaScript, Python, Java/JVM, .NET, Go, Rust, Ruby, Docker, Kubernetes,
+    Terraform, CI systems, Bazel, Ansible, Homebrew, asdf, mise, nix, proto, and more
+  - Pluggable Git platform adapters for GitHub, GitLab, Bitbucket Cloud/DC, Azure DevOps, Gitea, Forgejo,
+    AWS CodeCommit, Gerrit, SCM-Manager
+  - Repository configuration via renovate.json / renovate.json5 / .github/renovate.json / .gitlab/renovate.json
+    / .renovaterc with full JSON Schema
+  - Shareable config presets (extends) including the curated config:recommended preset
+  - packageRules for conditional behaviour by package, depType, manager, or file pattern
+  - Dependency Dashboard issue summarising every open and pending update
+  - Automerge with PR, branch, or PR-comment strategies and separate automergeSchedule
+  - Grouping of related updates (group, group:allNonMajor, group:monorepos, etc.)
+  - Lock file maintenance and digest pinning for Docker, GitHub Actions, and Helm
+  - Custom (regex) manager for updating versions in arbitrary file formats
+  - Private package and registry support (npmrc, hostRules, Vault / cloud secrets)
+  - Self-hosted execution as Node.js CLI, Docker container (Docker Hub + GHCR), GitHub Action, or pre-commit
+    hook
+  - Mend-hosted Renovate as a GitHub App, Bitbucket Cloud app, and Azure DevOps integration
+  - Merge Confidence ratings (Low / Neutral / High / Very High) per update from developer.mend.io/api/mc/
+  - Vulnerability alerts integration (GitHub Dependabot alerts, OSV)
+  - Configurable schedules to limit when PRs are opened or merged
+  - baseBranchPatterns to run Renovate across multiple branches in a single repo
+  - Deprecation handling with migration PRs for replacement packages
+  - 90+ versioning modules so version comparisons match the upstream ecosystem
+  - Multiple-times-per-day release cadence (43,000+ versions on npm, 5,000+ GitHub releases)
+  - Datasource modules covering npm, PyPI, Docker, Maven, NuGet, GitHub releases/tags, GitLab releases/tags,
+    Helm, crate, Go proxy, Conan, RubyGems, packagist, Galaxy, Terraform Registry, and more
+  - Pre-commit hook support
+  - JSON Schema (renovate-schema.json) for IDE validation of every configuration option
+  sources:
+  - https://docs.renovatebot.com/
+  - https://github.com/renovatebot/renovate
+  - https://docs.renovatebot.com/modules/manager/
+  - https://docs.renovatebot.com/modules/platform/
+  - https://docs.renovatebot.com/mend-hosted/overview/
+  - https://www.mend.io/renovate/
+  updated: '2026-05-25'
+created: '2026-05-25T00:00:00.000Z'
+modified: '2026-05-25'
+position: Consuming
+description: Renovate is an open source automated dependency update bot maintained by Mend. It scans
+  repositories for references to dependencies across 100+ package managers — npm, pip, poetry, Maven,
+  Gradle, NuGet, Go modules, Cargo, Bundler, Docker, Helm, Kubernetes, Terraform, GitHub Actions and
+  many more — and opens pull/merge requests that update versions, lockfiles, and digests. Renovate
+  runs as a CLI, Docker container, GitHub App, GitLab Runner, Bitbucket Cloud app, or Azure DevOps
+  integration, supports GitHub, GitLab, Bitbucket, Azure DevOps, Gitea, Forgejo, AWS CodeCommit, and
+  Gerrit, and is configured via a renovate.json file with shareable presets, packageRules, automerge,
+  grouping, scheduling, and a Dependency Dashboard. Mend provides a free Community Cloud hosted tier
+  for unlimited public and private repositories and a paid Enterprise Cloud tier with higher concurrency,
+  Merge Confidence Workflows, and support.
+maintainers:
+- FN: Kin Lane
+  email: info@apievangelist.com
+  X: apievangelist
+  url: https://apievangelist.com
+specificationVersion: '0.16'
