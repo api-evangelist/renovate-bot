@@ -173,16 +173,16 @@ common:
 - type: Documentation
   url: https://github.com/apps/renovate
   name: Renovate GitHub App
-- type: SignUp
+- type: Signup
   url: https://developer.mend.io/
   name: Mend Developer Portal
 - type: ChangeLog
   url: https://github.com/renovatebot/renovate/releases
 - type: Issues
   url: https://github.com/renovatebot/renovate/issues
-- type: Forum
+- type: Forums
   url: https://github.com/renovatebot/renovate/discussions
-- type: ContactInfo
+- type: Contact
   url: https://docs.renovatebot.com/getting-help/
 - type: Support
   url: https://docs.renovatebot.com/getting-help/
@@ -198,13 +198,13 @@ common:
 - type: Package
   url: https://github.com/renovatebot/renovate/pkgs/container/renovate
   name: GHCR ghcr.io/renovatebot/renovate
-- type: Tool
+- type: Tools
   url: https://github.com/renovatebot/github-action
   name: Renovate GitHub Action
-- type: Tool
+- type: Tools
   url: https://github.com/renovatebot/pre-commit-hooks
   name: Renovate pre-commit hooks
-- type: SDK
+- type: SDKs
   url: https://github.com/renovatebot/renovate/tree/main/lib
   name: Renovate Node.js library (lib/)
 - type: CodeExamples
