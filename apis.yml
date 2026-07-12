@@ -160,6 +160,10 @@ kind: contract
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 common:
+- type: TrustCenter
+  url: security/renovate-bot-trust-center.yml
+- type: DomainSecurity
+  url: security/renovate-bot-domain-security.yml
 - type: Portal
   url: https://www.mend.io/renovate/
 - type: Documentation
