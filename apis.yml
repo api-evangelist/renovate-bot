@@ -7,6 +7,11 @@ apis:
   - CLI
   - DependencyUpdates
   - Automation
+  - Open-Source
+  tags_raw:
+  - CLI
+  - DependencyUpdates
+  - Automation
   - OpenSource
   humanURL: https://docs.renovatebot.com/usage/
   properties:
@@ -52,6 +57,10 @@ apis:
 - aid: renovate-bot:renovate-managers
   name: Renovate Package Managers
   tags:
+  - Package Managers
+  - Language
+  - DependencyUpdates
+  tags_raw:
   - PackageManagers
   - Languages
   - DependencyUpdates
@@ -74,6 +83,10 @@ apis:
 - aid: renovate-bot:renovate-platforms
   name: Renovate Git Platforms
   tags:
+  - Platforms
+  - Integration
+  - SCM
+  tags_raw:
   - Platforms
   - Integrations
   - SCM
@@ -106,6 +119,10 @@ apis:
 - aid: renovate-bot:mend-hosted-renovate
   name: Mend Hosted Renovate
   tags:
+  - HostedService
+  - Software-as-a-Service
+  - Mend
+  tags_raw:
   - HostedService
   - SaaS
   - Mend
@@ -146,6 +163,17 @@ apis:
     `developer.mend.io/api/mc/`.
 name: Renovate
 tags:
+- DependencyUpdates
+- Developer Tools
+- Bots
+- Automation
+- Software Supply Chain
+- Open-Source
+- Mend
+- AGPLv3
+- Node.js
+- TypeScript
+tags_raw:
 - DependencyUpdates
 - DeveloperTools
 - Bots
