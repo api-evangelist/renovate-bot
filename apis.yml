@@ -185,6 +185,19 @@ tags_raw:
 - Node.js
 - TypeScript
 kind: contract
+deliveryModel:
+  model: saas
+  license: AGPL-3.0-only
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - license
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -199,6 +212,12 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/renovate-bot.png
 access: 3rd-Party
 common:
+- type: SecurityPolicy
+  url: https://github.com/renovatebot/renovate/blob/main/SECURITY.md
+- type: CodeOfConduct
+  url: https://github.com/renovatebot/renovate/blob/main/CODE_OF_CONDUCT.md
+- type: ContributionGuide
+  url: https://github.com/renovatebot/renovate/blob/main/.github/contributing.md
 - type: TrustCenter
   url: security/renovate-bot-trust-center.yml
 - type: DomainSecurity
