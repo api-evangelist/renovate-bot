@@ -7,7 +7,7 @@ apis:
   - CLI
   - DependencyUpdates
   - Automation
-  - Open-Source
+  - OpenSource
   tags_raw:
   - CLI
   - DependencyUpdates
@@ -57,7 +57,7 @@ apis:
 - aid: renovate-bot:renovate-managers
   name: Renovate Package Managers
   tags:
-  - Package Managers
+  - PackageManagers
   - Language
   - DependencyUpdates
   tags_raw:
@@ -164,11 +164,11 @@ apis:
 name: Renovate
 tags:
 - DependencyUpdates
-- Developer Tools
+- DeveloperTools
 - Bots
 - Automation
-- Software Supply Chain
-- Open-Source
+- SoftwareSupplyChain
+- OpenSource
 - Mend
 - AGPLv3
 - Node.js
