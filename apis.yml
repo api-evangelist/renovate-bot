@@ -27,8 +27,8 @@ apis:
     type: Package
   description: The open source Renovate CLI is a Node.js application distributed via npm and as Docker
     images on Docker Hub and GitHub Container Registry. It can be run locally, in CI, or as a long-lived
-    self-hosted bot to scan repositories, detect dependency files for 100+ package managers, and open pull
-    requests that update outdated versions, lockfiles, and digests. Self-hosted Renovate is configured
+    self-hosted bot to scan repositories, detect dependency files for 100+ package managers, and open
+    pull requests that update outdated versions, lockfiles, and digests. Self-hosted Renovate is configured
     through environment variables, a JS/JSON config file, and per-repository config files.
 - aid: renovate-bot:renovate-configuration
   name: Renovate Configuration
@@ -78,8 +78,8 @@ apis:
     Kubernetes (kubernetes, kustomize, helmfile, helmsman, flux, argocd), Terraform (terraform, terragrunt),
     CI systems (github-actions, gitlabci, circleci, jenkins, azure-pipelines, bitbucket-pipelines, buildkite,
     droneci, tekton, woodpecker), Bazel, Ansible, Homebrew, asdf, mise, nix, proto, and many more. Each
-    manager pairs with a datasource and a versioning scheme module so version comparison matches the
-    upstream ecosystem.
+    manager pairs with a datasource and a versioning scheme module so version comparison matches the upstream
+    ecosystem.
 - aid: renovate-bot:renovate-platforms
   name: Renovate Git Platforms
   tags:
@@ -140,9 +140,9 @@ apis:
     app, and Azure DevOps integration on Mend infrastructure. A generous Community Cloud free tier covers
     unlimited public and private repositories with 1 concurrent job, 4-hour scheduling, 1 vCPU / 3 GB
     memory / 15 GB disk, and a 30-minute job timeout. The Community OSS Cloud uplift (for OSI-licensed
-    open source projects) doubles concurrency and memory and adds Merge Confidence Workflows. The
-    Enterprise Cloud tier provides 16 concurrent jobs, hourly scheduling, larger runners, Merge Confidence
-    Workflows, and Mend helpdesk support.
+    open source projects) doubles concurrency and memory and adds Merge Confidence Workflows. The Enterprise
+    Cloud tier provides 16 concurrent jobs, hourly scheduling, larger runners, Merge Confidence Workflows,
+    and Mend helpdesk support.
 - aid: renovate-bot:renovate-merge-confidence
   name: Renovate Merge Confidence
   tags:
@@ -156,11 +156,10 @@ apis:
   - url: https://developer.mend.io/api/mc/
     type: API
   description: Merge Confidence is a Mend-operated data service that classifies each candidate update
-    (Low / Neutral / High / Very High) using package age, adoption, test pass rates, and known
-    vulnerabilities. Renovate consumes the Merge Confidence API to attach a confidence badge and reason
-    to each PR and can drive `packageRules` to restrict automerge to High / Very High updates. The
-    underlying API is publicly readable (no auth required for read) and lives under
-    `developer.mend.io/api/mc/`.
+    (Low / Neutral / High / Very High) using package age, adoption, test pass rates, and known vulnerabilities.
+    Renovate consumes the Merge Confidence API to attach a confidence badge and reason to each PR and
+    can drive `packageRules` to restrict automerge to High / Very High updates. The underlying API is
+    publicly readable (no auth required for read) and lives under `developer.mend.io/api/mc/`.
 name: Renovate
 tags:
 - DependencyUpdates
@@ -212,6 +211,8 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/renovate-bot.png
 access: 3rd-Party
 common:
+- type: Website
+  url: https://renovatebot.com
 - type: SecurityPolicy
   url: https://github.com/renovatebot/renovate/blob/main/SECURITY.md
 - type: CodeOfConduct
@@ -432,18 +433,17 @@ common:
   - https://www.mend.io/renovate/
   updated: '2026-05-25'
 created: '2026-05-25T00:00:00.000Z'
-modified: '2026-05-25'
+modified: '2026-09-16'
 position: Consuming
-description: Renovate is an open source automated dependency update bot maintained by Mend. It scans
-  repositories for references to dependencies across 100+ package managers — npm, pip, poetry, Maven,
-  Gradle, NuGet, Go modules, Cargo, Bundler, Docker, Helm, Kubernetes, Terraform, GitHub Actions and
-  many more — and opens pull/merge requests that update versions, lockfiles, and digests. Renovate
-  runs as a CLI, Docker container, GitHub App, GitLab Runner, Bitbucket Cloud app, or Azure DevOps
-  integration, supports GitHub, GitLab, Bitbucket, Azure DevOps, Gitea, Forgejo, AWS CodeCommit, and
-  Gerrit, and is configured via a renovate.json file with shareable presets, packageRules, automerge,
-  grouping, scheduling, and a Dependency Dashboard. Mend provides a free Community Cloud hosted tier
-  for unlimited public and private repositories and a paid Enterprise Cloud tier with higher concurrency,
-  Merge Confidence Workflows, and support.
+description: Renovate is an open source automated dependency update bot maintained by Mend. It scans repositories
+  for references to dependencies across 100+ package managers — npm, pip, poetry, Maven, Gradle, NuGet,
+  Go modules, Cargo, Bundler, Docker, Helm, Kubernetes, Terraform, GitHub Actions and many more — and
+  opens pull/merge requests that update versions, lockfiles, and digests. Renovate runs as a CLI, Docker
+  container, GitHub App, GitLab Runner, Bitbucket Cloud app, or Azure DevOps integration, supports GitHub,
+  GitLab, Bitbucket, Azure DevOps, Gitea, Forgejo, AWS CodeCommit, and Gerrit, and is configured via a
+  renovate.json file with shareable presets, packageRules, automerge, grouping, scheduling, and a Dependency
+  Dashboard. Mend provides a free Community Cloud hosted tier for unlimited public and private repositories
+  and a paid Enterprise Cloud tier with higher concurrency, Merge Confidence Workflows, and support.
 maintainers:
 - FN: Kin Lane
   email: info@apievangelist.com
