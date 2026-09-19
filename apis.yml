@@ -83,7 +83,7 @@ apis:
 - aid: renovate-bot:renovate-platforms
   name: Renovate Git Platforms
   tags:
-  - Platforms
+  - Platform
   - Integration
   - SCM
   tags_raw:
