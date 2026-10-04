@@ -7,12 +7,13 @@ apis:
   - CLI
   - DependencyUpdates
   - Automation
-  - Open-Source
+  - Open Source
   tags_raw:
   - CLI
   - DependencyUpdates
   - Automation
   - OpenSource
+  - Open-Source
   humanURL: https://docs.renovatebot.com/usage/
   properties:
   - url: https://docs.renovatebot.com/
@@ -167,7 +168,7 @@ tags:
 - Bots
 - Automation
 - Software Supply Chain
-- Open-Source
+- Open Source
 - Mend
 - AGPLv3
 - Node.js
@@ -183,6 +184,7 @@ tags_raw:
 - AGPLv3
 - Node.js
 - TypeScript
+- Open-Source
 kind: contract
 deliveryModel:
   model: saas
